@@ -12,12 +12,12 @@ function Home() {
   return (
     <>
       <div className="w-screen md:h-screen text-black justify-center flex flex-col font-bold text-2xl ">
-        <div className="w-full md:mt-5 mt-20 flex justify-around items-end ">
+        <div className="w-full md:overflow-visible  overflow-scroll scroll-smooth md:mt-5 mt-20 flex justify-around items-end ">
           <Catagery />
         </div>
         <div className="w-full  flex md:flex-row flex-col-reverse justify-center items-center">
           <div className="md:w-[50%]  h-full flex flex-col justify-center items-center">
-            <motion.div className="flex flex-col justify-center items-start md:gap-5 gap-2">
+            <motion.div className="flex px-5 flex-col justify-center items-start md:gap-5 gap-2">
               <motion.h1
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -54,7 +54,7 @@ function Home() {
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ duration: 0.5, delay: 1.2 }}
-                className=" w-[50%] cursor-pointer bg-red-600 text-white px-5 py-2 rounded-4xl"
+                className=" md:w-[50%] cursor-pointer bg-red-600 text-white px-5 py-2 rounded-4xl"
               >
                 Letest Collection
               </motion.button>
