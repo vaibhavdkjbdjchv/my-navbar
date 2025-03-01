@@ -22,8 +22,8 @@ function WomensPage() {
         >
           <div className="w-[50%] h-full flex justify-center items-center">
             <div className="w-full gap-5 h-full text-white flex flex-col justify-center items-center">
-              <h1 className="text-7xl font-bold">Flat 50% Off</h1>
-              <h2 className="text-4xl flex gap-2">
+              <h1 className="md:text-7xl text-5xl font-bold">Flat 50% Off</h1>
+              <h2 className="md:text-4xl text-2xl flex gap-2">
                 <span>12</span>Hours <span>20</span>Mins
               </h2>
               <button className="bg-white text-black duration-700 ease-in-out px-5 py-2 rounded-4xl hover:bg-transparent hover:border-1 hover:text-white">

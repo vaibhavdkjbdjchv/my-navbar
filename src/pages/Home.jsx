@@ -12,7 +12,7 @@ function Home() {
   return (
     <>
       <div className="w-screen md:h-screen text-black justify-center flex flex-col font-bold text-2xl ">
-        <div className="w-full md:mt-5 mt-40 flex justify-around items-end ">
+        <div className="w-full md:mt-5 mt-20 flex justify-around items-end ">
           <Catagery />
         </div>
         <div className="w-full  flex md:flex-row flex-col-reverse justify-center items-center">

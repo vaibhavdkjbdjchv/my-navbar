@@ -7,7 +7,7 @@ function Catagery() {
       <NavLink
         to={"/"}
         className={({ isActive }) =>
-          `hover:border-b-2  duration-500 ease-in-out hover:text-black py-5 px-5  ${
+          `hover:border-b-2 md:text-2xl text-lg  duration-500 ease-in-out hover:text-black py-5 px-5  ${
             isActive ? " border-b-2" : ""
           }`
         }
@@ -17,7 +17,7 @@ function Catagery() {
       <NavLink
         to={"/mens"}
         className={({ isActive }) =>
-          `hover:border-b-2  duration-500 ease-in-out hover:text-black py-5 px-5  ${
+          `hover:border-b-2 md:text-2xl text-lg  duration-500 ease-in-out hover:text-black py-5 px-5  ${
             isActive ? " border-b-2" : ""
           }`
         }
@@ -27,7 +27,7 @@ function Catagery() {
       <NavLink
         to={"/womens"}
         className={({ isActive }) =>
-          `hover:border-b-2  duration-500 ease-in-out hover:text-black py-5 px-5  ${
+          `hover:border-b-2 md:text-2xl text-lg duration-500 ease-in-out hover:text-black py-5 px-5  ${
             isActive ? " border-b-2" : ""
           }`
         }
@@ -37,7 +37,7 @@ function Catagery() {
       <NavLink
         to={"/child"}
         className={({ isActive }) =>
-          `hover:border-b-2  duration-500 ease-in-out hover:text-black py-5 px-5  ${
+          `hover:border-b-2 md:text-2xl text-lg duration-500 ease-in-out hover:text-black py-5 px-5  ${
             isActive ? " border-b-2" : ""
           }`
         }
