@@ -16,7 +16,7 @@ function Footer() {
       initial={{opacity:0, y: 100 }}
       whileInView={{opacity:1, y: 0 }}
       transition={{ duration: 0.5}}
-      className="w-[95%] mt-10 rounded-t-4xl h-[40vh] flex items-start  justify-center bg-white"
+      className="w-[95%] mt-10 rounded-t-4xl md:h-[40vh] h-auto md:pb-0 pb-20 flex items-start  justify-center bg-white"
     >
       <div className=" text-white mt-10 py-8 px-4 md:rounded-t-[100px] rounded-t-4xl">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-6">

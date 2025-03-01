@@ -29,7 +29,7 @@ function Header() {
           <div
             className={`${
               hideText
-                ? "w-[5%] rounded-[100%] py-5 px-5"
+                ? "md:w-[5%] w-[15%] rounded-[100%] py-5 px-5"
                 : "w-[90%] rounded-b-4xl"
             }  py-2  duration-700 ease-in-out shadow-[0px_15px_15px_rgba(0,0,0,0.3)] bg-black h-[7%] flex justify-center items-center `}
           >
