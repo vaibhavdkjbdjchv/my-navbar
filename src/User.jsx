@@ -1,8 +1,6 @@
 import React, { use } from "react";
-import Navbar from "../../components/Navbar";
 import { useAuth0 } from "@auth0/auth0-react";
-import AuthButtons from "../../components/AuthButtons";
-import { div, h1 } from "framer-motion/client";
+import AuthButtons from "../components/AuthButtons";
 
 const User = () => {
   const { loginWithRedirect, user, isAuthenticated, logout, isLoading } =

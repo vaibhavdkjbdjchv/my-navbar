@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import hand from "./../Assets/hand_icon.png";
-import bgimage from "./../Assets/hero_image.png";
+import hand from "./../src/Assets/hand_icon.png";
+import bgimage from "./../src/Assets/hero_image.png";
 import { motion } from "motion/react";
-import PopularWomens from "../../components/PopularWomens";
-import exclusive_image from "../../src/Assets/exclusive_image.png";
-import NewCollection from "../../components/NewCollection";
-import Footer from "../../components/Footer";
-import Catagery from "../../components/Catagery";
+import PopularWomens from "../components/PopularWomens";
+import exclusive_image from "../src/Assets/exclusive_image.png";
+import NewCollection from "../components/NewCollection";
+import Footer from "../components/Footer";
+// import Catagery from "../../components/Catagery";
 function Home() {
   return (
     <>

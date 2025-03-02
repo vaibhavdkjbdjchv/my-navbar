@@ -1,8 +1,7 @@
 import React from "react";
-import all_product from "./../Assets/all_product";
-import WomensPage from "../../components/WomensPage";
+import all_product from "./../src/Assets/all_product";
 import { NavLink } from "react-router-dom";
-import CatageryPage from "./CatageryPage";
+import CatageryPage from "./pages/CatageryPage";
 
 function List() {
   const mensDiv = () => {

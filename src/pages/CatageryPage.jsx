@@ -50,7 +50,7 @@ function CatageryPage() {
         </button>
       </div>
       <div className="w-full flex flex-col items-center justify-center">
-        <motion.div className="w-[90%] h-80 flex bg-gradient-to-r rounded-4xl from-[#000000] to-white">
+        <motion.div className="w-[90%] h-80 flex bg-gradient-to-r rounded-4xl from-[#000000] to-[rgb(238, 238, 238)]">
           <div className="md:w-[50%] w-full px-2 h-full flex justify-center items-center">
             <div className="w-full gap-5 h-full text-white flex flex-col justify-center items-center">
               <h1 className="md:text-7xl text-7xl font-bold">Flat 50% Off</h1>

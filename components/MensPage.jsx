@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import all_product from "./../src/Assets/all_product";
 import { motion } from "motion/react";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useCart } from "./../src/pages/CartContext";
 
-function MensPage() {
+function MensPage({ menProduct }) {
   const menProducts = all_product.filter((item) => item.category === "men");
 
+  const { cartItems, addToCart } = useCart();
+  const [clickedHearts, setClickedHearts] = useState({});
+  // const { addToCart } = useCart();
+  const handleHeartClick = (product) => {
+    addToCart(product);
+    setClickedHearts((prev) => ({
+      ...prev,
+      [product.id]: !prev[product.id], // Toggle heart color state
+    }));
+  };
   return (
     <div className=" flex flex-col items-center justify-center">
       <motion.div
@@ -18,8 +31,15 @@ function MensPage() {
             {menProducts.map((product) => (
               <div
                 key={product.id}
-                className="flex flex-col justify-center items-center bg-white shadow-lg p-4 rounded-lg"
+                className="relative flex flex-col justify-center items-center bg-white shadow-lg p-4 rounded-lg"
               >
+                <div className="absolute top-2 right-4">
+                  <FontAwesomeIcon
+                    onClick={() => addToCart(product)} // Add to Cart on Click
+                    icon={faHeart}
+                    className="cursor-pointer text-black hover:text-red-600"
+                  />
+                </div>
                 <img
                   src={product.image}
                   alt={product.name}
