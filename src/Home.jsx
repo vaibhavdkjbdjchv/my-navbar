@@ -11,8 +11,7 @@ import Footer from "../components/Footer";
 function Home() {
   return (
     <>
-      <div className="w-screen md:h-screen text-black justify-center flex flex-col font-bold text-2xl ">
-     
+      <div className="w-screen mt-20 text-black justify-center flex flex-col font-bold text-2xl ">
         <div className="w-full  flex md:flex-row flex-col-reverse justify-center items-center">
           <div className="md:w-[50%]  h-full flex flex-col justify-center items-center">
             <motion.div className="flex px-5 flex-col justify-center items-start md:gap-5 gap-2">
@@ -83,10 +82,10 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="w-screen h-screen flex justify-center items-center">
-        <div className="w-[90%] h-[50%] bg-[#020202fd] flex  rounded-4xl text-white">
-          <div className="w-[50%] h-full flex flex-col justify-center items-center">
-            <div className=" h-full px-2 flex flex-col justify-center items-start gap-5">
+      <div className="w-screen h-screen  flex justify-center items-center">
+        <div className="w-[90%] h-[50%] bg-[#020202fd] flex justify-center rounded-4xl text-white">
+          <div className="md:w-[40%]  h-full flex flex-col justify-center items-center">
+            <div className="w-full h-full px-10 flex flex-col justify-center items-center md:items-start gap-5">
               <h1 className="md:text-7xl text-5xl robotFont font-bold">
                 Excusive
               </h1>
@@ -101,8 +100,8 @@ function Home() {
               </button>
             </div>
           </div>
-          <div className="w-[50%] flex justify-center items-center h-full">
-            <img src={exclusive_image} alt="" className="w-80" />
+          <div className="w-[40%] flex  justify-center mobileView items-center h-full">
+            <img src={exclusive_image} alt="" className="w-80 " />
           </div>
         </div>
       </div>
