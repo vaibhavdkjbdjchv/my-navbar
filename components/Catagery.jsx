@@ -1,49 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 function Catagery() {
+  const [mensDivActive, setMensDiveActive] = useState(false);
+  const [womensDivActive, setWoMensDiveActive] = useState(false);
+  const [kidsDivActive, setKidsDiveActive] = useState(false);
+
   return (
-    <div className="w-[80%] flex  gap-5">
-      <NavLink
-        to={"/"}
-        className={({ isActive }) =>
-          `hover:border-b-2 md:text-2xl text-lg  duration-500 ease-in-out hover:text-black py-5 px-5  ${
-            isActive ? " border-b-2" : ""
-          }`
-        }
-      >
-        Shop
-      </NavLink>
-      <NavLink
-        to={"/mens"}
-        className={({ isActive }) =>
-          `hover:border-b-2 md:text-2xl text-lg  duration-500 ease-in-out hover:text-black py-5 px-5  ${
-            isActive ? " border-b-2" : ""
-          }`
-        }
-      >
-        Mens
-      </NavLink>
-      <NavLink
-        to={"/womens"}
-        className={({ isActive }) =>
-          `hover:border-b-2 md:text-2xl text-lg duration-500 ease-in-out hover:text-black py-5 px-5  ${
-            isActive ? " border-b-2" : ""
-          }`
-        }
-      >
+    <div className="w-[80%] flex justify-evenly  gap-5">
+      <button onClick={() => setMensDiveActive(!mensDivActive)}>Mens</button>
+      <button onClick={() => setWoMensDiveActive(!womensDivActive)}>
         Womens
-      </NavLink>
-      <NavLink
-        to={"/child"}
-        className={({ isActive }) =>
-          `hover:border-b-2 md:text-2xl text-lg duration-500 ease-in-out hover:text-black py-5 px-5  ${
-            isActive ? " border-b-2" : ""
-          }`
-        }
-      >
-        Kids
-      </NavLink>
+      </button>
+      <button onClick={() => setKidsDiveActive(!kidsDivActive)}>Kids</button>
     </div>
   );
 }

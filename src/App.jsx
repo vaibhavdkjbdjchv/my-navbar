@@ -11,6 +11,7 @@ import Header from "../components/Header";
 import MensPage from "../components/MensPage";
 import WomensPage from "../components/WomensPage";
 import ChildPage from "../components/ChildPage";
+import CatageryPage from "./pages/CatageryPage";
 
 function App() {
   return (
@@ -30,9 +31,8 @@ function App() {
         <Route path="/list" element={<List />} />
         <Route path="/chartlist" element={<ChartBar />} />
         <Route path="/user" element={<User />} />
-        <Route path="/mens" element={<MensPage />} />
-        <Route path="/womens" element={<WomensPage />} />
-        <Route path="/child" element={<ChildPage />} />
+        <Route path="/catagery" element={<CatageryPage />} />
+    
       </Routes>
     </BrowserRouter>
   );
