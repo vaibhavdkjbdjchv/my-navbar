@@ -19,7 +19,7 @@ function MensPage({ menProduct }) {
     }));
   };
   return (
-    <div className=" flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -31,7 +31,7 @@ function MensPage({ menProduct }) {
             {menProducts.map((product) => (
               <div
                 key={product.id}
-                className="relative flex flex-col justify-center items-center bg-white shadow-lg p-4 rounded-lg"
+                className="relative z-0 flex flex-col justify-center items-center bg-white shadow-lg p-4 rounded-lg"
               >
                 <div className="absolute top-2 right-4">
                   <FontAwesomeIcon
