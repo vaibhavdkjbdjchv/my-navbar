@@ -4,13 +4,11 @@ import Womenbanner from "./../Assets/banner_women-removebg-preview.png";
 import kidsbanner from "./../Assets/banner_kids-removebg-preview.png";
 
 import { motion } from "motion/react";
-import all_product from "../Assets/all_product";
 import MensPage from "../../components/MensPage";
 import WomensPage from "../../components/WomensPage";
 import ChildPage from "../../components/ChildPage";
 
 function CatageryPage() {
-  const menProducts = all_product.filter((item) => item.category === "men");
   const [mensDivActive, setMensDivActive] = useState(true);
   const [womensDivActive, setWoMensDivActive] = useState(false);
   const [kidsDivActive, setKidsDivActive] = useState(false);

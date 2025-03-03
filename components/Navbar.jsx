@@ -20,8 +20,8 @@ const Navbar = () => {
   const { loginWithRedirect, user, isAuthenticated, logout } = useAuth0();
 
   return (
-    <motion.div className="relative flex justify-center items-center">
-      <motion.div className="fixed z-999 bottom-0 md:w-[90%] w-full h-[8%] flex justify-center items-center rounded-t-2xl md:rounded-t-4xl bg-black text-2xl shadow-[0px_-15px_15px_rgba(0,0,0,0.3)] ">
+    <motion.div className="relative z-9999 flex justify-center items-center">
+      <motion.div className="fixed z-9999 bottom-0 md:w-[90%] w-full h-[8%] flex justify-center items-center rounded-t-2xl md:rounded-t-4xl bg-black text-2xl shadow-[0px_-15px_15px_rgba(0,0,0,0.3)] ">
         <div className="w-[90%] flex justify-between items-center">
           <NavLink
             to={"/"}
