@@ -7,8 +7,13 @@ import PopularWomens from "../components/PopularWomens";
 import exclusive_image from "../src/Assets/exclusive_image.png";
 import NewCollection from "../components/NewCollection";
 import Footer from "../components/Footer";
+
 // import Catagery from "../../components/Catagery";
 function Home() {
+  const navigate = useNavigate();
+  const goToAbout = () => {
+    navigate("/list"); // Navigate to About Us Page
+  };
   return (
     <>
       <div className="w-screen mt-20 text-black justify-center flex flex-col font-bold text-2xl ">
@@ -48,6 +53,7 @@ function Home() {
                 for every one
               </motion.p>
               <motion.button
+                onClick={goToAbout}
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ duration: 0.5, delay: 1.2 }}
@@ -95,7 +101,10 @@ function Home() {
               <h2 className="md:text-2xl  font-sans font-semibold">
                 ONLY ON BEST SELLERS PRODUCT
               </h2>
-              <button className="w-[50%] bg-white text-black py-2 rounded-4xl text-lg font-semibold robotFont hover:border-1 hover:bg-transparent border-white duration-700 hover:text-white cursor-pointer">
+              <button
+                onClick={goToAbout}
+                className="w-[50%] bg-white text-black py-2 rounded-4xl text-lg font-semibold robotFont hover:border-1 hover:bg-transparent border-white duration-700 hover:text-white cursor-pointer"
+              >
                 Check Now
               </button>
             </div>

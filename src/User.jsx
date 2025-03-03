@@ -3,8 +3,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import AuthButtons from "../components/AuthButtons";
 
 const User = () => {
-  const { loginWithRedirect, user, isAuthenticated, logout, isLoading } =
-    useAuth0();
+  const { user, isAuthenticated, logout, isLoading } = useAuth0();
   console.log(user);
 
   if (isLoading) return <div>Loading...</div>;
@@ -38,7 +37,7 @@ const User = () => {
                       <p className="md:text-3xl robotFont font-bold">
                         Email Id :
                       </p>
-                      <h1 className="font-light md:ext-2xl text-lg robotFont">
+                      <h1 className="font-light md:text-2xl text-lg robotFont">
                         {user.email}
                       </h1>
                     </div>
