@@ -76,7 +76,7 @@ const Navbar = () => {
             to={"/user"}
             className={({ isActive }) =>
               `hover:bg-white duration-700 ease-in-out hover:text-black p-1 ${
-                isAuthenticated ? "p-1" : "py-7 px-8"
+                isAuthenticated ? "p-1" : "py-3 px-5"
               }  rounded-full ${
                 isActive
                   ? "bg-white dura text-black -mt-20 font-bold  shadow-[0px_-5px_15px_rgba(0,0,0,0.3)] "
